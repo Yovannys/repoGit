@@ -1,0 +1,12 @@
+# HTTP Server
+# Podemos definir un puerto aleatorio con el valor 0, 
+# puesto que ahora quien quiera consumir el servicio no necesita saber su url, solamente consultar a Eureka
+
+server:  
+  port: 0   # HTTP port
+
+# Discovery Server Access
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:1111/eureka/
